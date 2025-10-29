@@ -1,0 +1,137 @@
+:root {
+      --bg: #0c0f14;
+      --card: #141a21;
+      --text: #e6eaf0;
+      --muted: #a6b1bb;
+      --primary: #4f9fff;
+      --border: #2a3240;
+      --link: #8bd3ff;
+    }
+    
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0b0f14 0%, #121923 60%, #0b0f14 100%);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10, 14, 20, 0.92);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+    }
+
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand__logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #4f9fff 0%, #7e5bdc 100%);
+      display: inline-block;
+    }
+
+    .brand__name {
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    nav {
+      margin-top: 8px;
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      margin-right: 14px;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 48px 0 72px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 12px;
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    section {
+      background: rgba(20, 26, 33, 0.8);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 28px;
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .list {
+      margin: 12px 0 0 20px;
+    }
+
+    .list li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* кнопка вверх */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1a2230;
+      color: #fff;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+      transition: transform .2s ease;
+    }
+    .back-to-top:hover { transform: translateY(-2px); }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 1.5rem; }
+      section { padding: 20px; }
+    }

@@ -1,0 +1,7 @@
+:root {
+    --border-radius: 8px 0 0 8px;
+    --border-radius-2: 0 8px 8px 0;
+    --color-blue:#3555FA;
+    --rus-font: 'Roboto', sans-serif;
+    --english-font: 'Outfit', sans-serif;
+}

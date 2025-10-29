@@ -1,0 +1,349 @@
+.zexus {
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(./img/background-image-left.png);
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+}
+
+.right-part {
+    width: 50%;
+    background-image: url(./img/background-image-right.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-title{
+    font-family: var(--english-font);
+    font-weight: 1000;
+    color: white;
+    font-size: 86px;
+    padding: 0;
+}
+
+.first-avatar {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+
+.zeus-image {
+    min-width: 180px;
+    content: url(./img/zeus.png);
+    width: 180px;
+    aspect-ratio: 1;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+        scale: 1.1;
+        content: url(./img/zeus-3.png);
+    }
+}
+
+.title-head {
+    justify-content: center;
+    margin-right: 335px;
+    display: flex;
+    margin-left: 150px;
+    align-items: end;
+}
+
+.title-text {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.1px;
+    line-height: 30px;
+    color: white;
+    font-size: 24px;
+    font-family: var(--rus-font);
+    text-wrap: nowrap;
+}
+
+.left__part_comingSoon {
+    align-items: center;
+    margin-right: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coming-soon-title {
+    font-size: 90px;
+    font-family: var(--english-font);
+    font-weight: 700;
+    color: white;
+    margin-top: 50px;
+    text-wrap: nowrap;
+    margin-left: 145px;
+}
+
+.comingSoon_text {
+    text-wrap: nowrap;
+    font-size: 24px;
+    color: white;
+    font-family: var(--rus-font);
+    font-weight: 200;
+    margin-left: 160px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 110px;
+}
+
+a {
+    color: white;
+    &:hover {
+        color: lightskyblue;
+    }
+}
+
+.dvaolega {
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        cursor: auto ;
+    }
+}
+
+
+.form-input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    color: gray;
+    font-family: var(--english-font);
+    border-radius: var(--border-radius);
+    border: none;
+
+}
+
+.subscribe-button {
+    font-family: var(--rus-font);
+    font-weight: 700;
+    border: none;
+    background-color: var(--color-blue);
+    color: white;
+    border-radius: var(--border-radius-2);
+
+    &:hover {
+        background-color: rgb(68, 68, 255);
+    }
+    &:active {
+        background-color: rgb(0, 0, 126);
+    }
+}
+
+
+
+.form-description {
+    font-family: var(--rus-font);
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    margin-right: 130px;
+    margin-top: 20px;
+
+}
+
+.subscribers {
+    justify-content: center;
+    margin-right: 130px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribers-avatar {
+    display: flex;
+}
+
+
+.subscribers-text {
+    color: white;
+    font-family: var(--rus-font);
+    margin-left: 18px;
+}
+
+.subscribers-count {
+    font-weight: 700;
+}
+
+.first-avatar {
+    position: relative;
+    z-index: 2;
+
+}
+
+.second-avatar {
+    position: absolute;
+    margin-left: 12px;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.timer-info {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--rus-font);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.timer {
+    font-size: 60px;
+    font-weight: 1000;
+
+}
+
+
+.timer-info-text {
+    display: flex;
+    gap: 40px;
+    margin-left: 10px;
+}
+
+.telegram-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.telegram-text {
+    font-family: var(--rus-font);
+    font-weight: 500;
+    
+}
+
+.telegram-info img {
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.timer {
+    display: flex;
+}
+
+@media (max-width:1500px)  {
+    .zexus {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-part {
+        width: 100%;
+    }
+    .right-part {
+        width: 100%;
+    }
+}
+
+@media (max-width:750px)  {
+    .title-head {
+        display: flex;
+        flex-direction: column;
+    }
+    .zexus {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-part {
+        width: 100%;
+    }
+    .title-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .title-text {
+        font-size: 14px;
+    }
+    .coming-soon-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+    }
+    .left__part_comingSoon {
+        
+        margin: 0;
+    }
+    .coming-soon-title {
+        margin: 0;
+    }
+    .form-input {
+        padding: 15px 70px 15px 15px;
+    }
+    .comingSoon_text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        font-size: 14px;
+    }
+    .form-description {
+        font-size: 16px;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .form-description {
+        margin-right: 0;
+    }
+    .subscribers {
+        margin: 0;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .form-input {
+        padding: 10px;
+    }
+    .title-text {
+        margin-top: 20px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .form-description {
+        font-size: 12px;
+    }
+    .coming-soon-title {
+        margin-top: 15px;
+        font-size: 40px;
+    }
+    .main-title {
+        font-size: 60px;
+    }
+    .subscribers {
+        margin-top: 30px;
+    }
+}
