@@ -1,1 +1,1 @@
-0 4 * * * python3 /scripts/backup.py
+* 12 * * * docker start pg_backup
