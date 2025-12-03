@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zexus – Sign up with Phone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <div class="left">
+        <div class="logo">Zexus</div>
+
+        <h2>Sign up with your phone</h2>
+
+        <input type="tel" class="input" placeholder="Enter your phone" id="phone" maxlength="10">
+
+        <div class="separator"></div>
+
+        <button class="btn primary" id="continueBtn">Continue</button>
+        <button class="btn" id="goBackBtn">Go back</button>
+
+    </div>
+
+    <div class="right">
+        <svg width="658" height="830" viewBox="0 0 658 830" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="152.5" cy="409" rx="152.5" ry="153" fill="#617A9C" fill-opacity="0.3"/>
+            <ellipse cx="345" cy="409" rx="259" ry="260" fill="#617A9C" fill-opacity="0.3"/>
+            <ellipse cx="616" cy="415" rx="414" ry="415" fill="#617A9C" fill-opacity="0.3"/>
+        </svg>
+    </div>
+
+</div>
+
+<script>
+    // Ограничение только цифр
+    document.getElementById('phone').addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D/g,'');
+    });
+
+    document.getElementById('continueBtn').onclick = () => {
+        const phone = document.getElementById('phone').value;
+        if(!phone){
+            alert("Please enter your phone number!");
+        } else {
+            alert("Continue clicked! (mock) Redirecting to next step...");
+        }
+    }
+
+    document.getElementById('goBackBtn').onclick = () => {
+        alert("Go back clicked! (mock) Returning to previous page...");
+    }
+</script>
+
+</body>
+</html>
+
