@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1d232c;
+    font-family: Inter, sans-serif;
+    color: #ffffff;
+}
+
+/* Основной контейнер */
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Левая панель */
+.left {
+    width: 55%;
+    padding: 70px 90px;
+}
+
+/* Правая панель */
+.right {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Лого */
+.logo {
+    font-size: 40px;
+    font-weight: 112;
+    margin-bottom: 50px;
+}
+
+/* Заголовок */
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Кнопки */
+.btn {
+    width: 340px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* Основная кнопка */
+.primary {
+    background: #ffffff;
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+
+/* Разделитель */
+.separator {
+    width: 340px;
+    height: 1px;
+    background: rgba(255,255,255,0.25);
+    margin: 20px 0;
+}
+/* Поле ввода */
+.input {
+    width: 340px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 18px;
+    margin-bottom: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.input:focus {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.5);
+}
+/* Подпись снизу */
+.signin {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.signin a {
+    color: #ffffff;
+    text-decoration: underline;
+} 
