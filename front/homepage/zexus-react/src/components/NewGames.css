@@ -1,0 +1,201 @@
+.newGames {
+    position: absolute;
+    width: 60vw;
+    
+}
+
+.newGames-title {
+    display: inline-flex;
+    margin-left: 20px;
+    font-size: 4vh;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.newGames-title:hover {
+    color: rgb(141, 141, 141);
+}
+
+.galochka {
+    width: 1.2vh;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    margin-top: 6px;
+}
+
+.newGames-list {
+    display: flex;
+    gap: 20px;
+    margin-top: -20px;
+}
+
+.newGames-card {
+    height: 40vh;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.3s ease;
+    scroll-snap-align: start;
+    overflow: hidden; /* Добавьте это */
+    border-radius: 12px; /* Опционально, для скругления углов */
+}
+
+.cart-icon {
+    position: absolute;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-left: 11vw;
+    margin-top: 31vh;
+    background-color: #617A9C;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.Subtract-button {
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    aspect-ratio: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.Subtract-button:hover {
+    scale: 1.1;
+}
+
+.Subtract-button:active {
+    scale: 0.95;
+}
+
+
+.newGames-list.infinite {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.newGames-list.infinite::-webkit-scrollbar {
+    display: none;
+}
+
+.newGames {
+    position: relative; /* Меняем на relative для позиционирования внутри */
+    width: 60vw;
+    
+    margin-left: 45px; /* Выравниваем с games-list */
+}
+
+.newGames-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.newGames-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newGames-title {
+    display: inline-flex;
+    font-size: 9vh;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 0;
+}
+
+.newGames-title:hover {
+    scale: 1.02;
+}
+.newGames-nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+
+.Subtract-button:active {
+    scale: 0.95;
+}
+
+.Subtract {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+}
+
+.newGames-viewport {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.newGames-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.newGames-list::-webkit-scrollbar {
+    display: none;
+}
+
+.newGames-card {
+    height: 40vh;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.3s ease;
+    scroll-snap-align: start;
+}
+.cart-icon {
+    position: absolute;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-left: 11vw;
+    margin-top: 31vh;
+    background-color: #617A9C;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.Subtract_right {
+    display: flex;
+    position: absolute;
+    margin-left: 56.5vw;
+    margin-top: -460px;
+}
+
+.newGames-card-image {
+    width: 100%;
+    margin-top: 30px;
+    height: 80%;
+    object-fit: cover; /* Ключевое свойство! */
+    transition: transform 0.3s ease;
+}

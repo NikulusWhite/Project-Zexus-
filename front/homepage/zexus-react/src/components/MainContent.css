@@ -1,0 +1,10 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    right: 120px;
+    bottom: 20px;
+    border-radius: 10px;
+}

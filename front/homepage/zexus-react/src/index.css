@@ -1,0 +1,34 @@
+body {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    background: #5f7696;
+    overflow: hidden;
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.zexus {
+    display: flex;
+    align-items: start;
+    gap: 26px;
+    justify-content: space-between;
+}
+
+.newGames-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+}
+

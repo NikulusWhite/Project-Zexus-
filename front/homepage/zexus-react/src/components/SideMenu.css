@@ -1,0 +1,51 @@
+.side-menu {
+    position: absolute;
+    width: 70px;
+    height: 200px;
+    background: #2f343a;
+    border-radius: 40px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.icon-btn:hover {
+    scale: 1.05;
+    transform: rotate(45deg);
+}
+
+.premium-btn {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 3px dashed #4a5568;
+    border-radius: 20px;
+    color: #cfd3d6;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.premium-btn:hover {
+    scale: 1.05;
+}

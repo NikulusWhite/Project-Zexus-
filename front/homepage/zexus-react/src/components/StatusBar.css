@@ -1,0 +1,74 @@
+.status-bar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: #353A40;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-left: 62vw;
+  margin-top: 50vh;
+  height: 38vh;
+  width: 27vw;
+  margin-right: 30px;
+}
+
+.status-bar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.status-bar__total-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7087a7;
+}
+
+.circle-effect {
+    position: absolute;
+}
+
+.status-bar__total-time {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.status-bar__hours {
+  font-size: 24px;
+  font-weight: 700;
+  color: #617A9C;
+}
+
+.status-bar__minutes {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.status-bar__months {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.status-bar__month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-bar__month-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #74849e;
+}
+
+.status-bar__month-time {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}

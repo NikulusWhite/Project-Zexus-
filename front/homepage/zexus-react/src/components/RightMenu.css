@@ -1,0 +1,21 @@
+.menu-button-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #353A40;
+    padding: 22px 18px;
+    gap: 37px;
+    margin: 26px;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s ease;
+    scale: 1.05;
+}

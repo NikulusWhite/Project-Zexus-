@@ -1,0 +1,73 @@
+.left-menu {
+    margin-left: 26px;
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #353A40;
+    height: 92vh;
+}
+
+.add_friend-button {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add_friend-button:hover {
+    scale: 1.05;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: #617A9C;
+    border-radius: 20px;
+    margin-top: 26px;
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 0;
+    gap: 10px;
+}
+
+.friends-list-item {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 4px 4px 61px 0 rgba(34, 60, 80, 0.6);
+}
+
+.friends-list-item:hover {
+    opacity: 0.8;
+}
+
+.friends-list-item li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.messenger {
+    background-color: transparent;
+    border: none;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.messenger:hover {
+    scale: 1.05;
+}
